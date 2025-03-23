@@ -78,5 +78,19 @@ namespace Cwiczenia3
                 "\nMax ilosc kontenerow: " + _max_ilosc_kontenerow +
                 "\nMax waga kontenerow: " + _max_waga_kontenerow + '\n';
         }
+        public void przeniesPomiedzyStatkami(Kontenerowiec do_statek, string numer_seryjny)
+        {
+            for (int i = 0; i < _kontenery.Count; i++)
+            {
+                if (_kontenery[i]._numer_seryjny.Equals(numer_seryjny))
+                {
+                    do_statek.zaladujKontener(_kontenery[i]);
+                    _kontenery.RemoveAt(i);
+                    Console.WriteLine("Przeniesiono pomyslnie");
+                    break;
+                }
+
+            }
+        }
     }
 }
