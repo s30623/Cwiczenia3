@@ -8,7 +8,7 @@ namespace Cwiczenia3
 {
     public class KontenerNaGaz : Kontener, IHazardNotifier
     {
-        private int _cisnienie {  get; set; }
+        public int _cisnienie {  get; set; }
         public KontenerNaGaz(int cisnienie, float masa_ladunku, float wysokosc, float waga_wlasna, float glebokosc, float maksymalna_ladownosc) : base(masa_ladunku, wysokosc, waga_wlasna, glebokosc, maksymalna_ladownosc)
         {
             this._cisnienie = cisnienie;

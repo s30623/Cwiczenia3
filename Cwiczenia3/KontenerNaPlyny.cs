@@ -9,7 +9,7 @@ namespace Cwiczenia3
     public class KontenerNaPlyny : Kontener, IHazardNotifier
     {
         private string _rodzaj_ladunku { get; set; }
-        public KontenerNaPlyny(string rodzaj_ladunku, float masa_ladunku, float wysokosc, float waga_wlasna, float glebokosc, string numer_seryjny, float maksymalna_ladownosc) : base(masa_ladunku, wysokosc, waga_wlasna, glebokosc, maksymalna_ladownosc) {
+        public KontenerNaPlyny(string rodzaj_ladunku, float masa_ladunku, float wysokosc, float waga_wlasna, float glebokosc, float maksymalna_ladownosc) : base(masa_ladunku, wysokosc, waga_wlasna, glebokosc, maksymalna_ladownosc) {
             this._rodzaj_ladunku = rodzaj_ladunku;
             this._rodzaj = 'L';
             Kontener.generujNumerSeryjny(this);

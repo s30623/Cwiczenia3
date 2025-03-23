@@ -66,7 +66,16 @@ namespace Cwiczenia3
             }
             kontener._numer_seryjny = numer_seryjny;
         }
-        
 
+        public override string? ToString()
+        {
+            return "Numer Seryjny: " + _numer_seryjny +
+                "\nMasa ladunku: " + _masa_ladunku +
+                " kg\nWysokosc: " + _wysokosc +
+                " cm\nWaga kontenera: " + _waga_wlasna +
+                " kg\nGlebokosc: " + _glebokosc +
+                " cm\nMaksymalna ladownosc: " + _maksymalna_ladownosc +
+                " kg\n";
+        }
     }
 }

@@ -17,12 +17,12 @@ namespace Cwiczenia3
             this._rodzaj = 'C';
             Kontener.generujNumerSeryjny(this);
         }
-        public void oproznijLadunek()
+        public override void oproznijLadunek()
         {
             base.oproznijLadunek();
             _produkty.Clear();
         }
-        public virtual void zaladujKontener(Produkt produkt)
+        public void zaladujKontener(Produkt produkt)
         {
             if (produkt._nazwa_produktu.Equals(this._rodzaj_produktu))
             {
